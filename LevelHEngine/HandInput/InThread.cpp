@@ -27,7 +27,7 @@ void InThread::threadMain()
 
 		*angle = input->getAngle(in.c_str());
 
-		std::cout << "Angle is " << angle << ".\n\n";
+		std::cout << "Angle is " << *angle << ".\n\n";
 	}
 	finished = true;
 }
