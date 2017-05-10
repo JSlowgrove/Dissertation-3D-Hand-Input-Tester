@@ -1,7 +1,10 @@
 #pragma once
 
-///The number for look up for conversion (360 / 1023)
-#define convNum 360.0f / 1023.0f
+//The number for look up for conversion for full 360 range
+//#define convNum 360.0f / 1023.0f 
+
+//The number for look up for conversion for 90 range
+#define convNum 90.0f / 1023.0f 
 
 /**
 @brief The class to handle the data input from the hand.
