@@ -1,8 +1,10 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #pragma once
 
 #include "GL/glew.h"
 #include <string>
-#include "Primitives.h"
+#include <vector>
 #include "../Maths/Vec3.h"
 
 /**
@@ -17,9 +19,7 @@ public:
 	@param objFileName The name of the obj file.
 	*/
 	Mesh(std::string objFileName);
-
-	Mesh(Primitives::PrimativeType primType);
-
+	
 	Mesh(std::string fileName, bool heightmap);
 
 	/**

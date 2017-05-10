@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "ModelComponent.h"
 
 #include "TransformComponent.h"
@@ -62,24 +64,6 @@ void ModelComponent::onRender()
 
 	/*disable the shader program*/
 	glUseProgram(0);
-}
-
-void ModelComponent::initaliseHeightmap(std::string fileName)
-{
-	meshID = ResourceManager::initialiseHeightmap(fileName);
-	textured = false;
-}
-
-void ModelComponent::initalisePrimitive(Primitives::PrimativeType primType)
-{
-	meshID = ResourceManager::initialisePrimitive(primType);
-	textured = false;
-}
-
-void ModelComponent::initaliseHeightmap(std::string fileName, std::string textureFileName)
-{
-	meshID = ResourceManager::initialiseHeightmap(fileName, textureFileName);
-	textured = true;
 }
 
 void ModelComponent::initaliseMesh(std::string objFileName)

@@ -5,6 +5,7 @@
 
 /**
 @brief Handles audio using SDL_Mixer.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class Audio
 {

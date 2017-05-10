@@ -5,6 +5,7 @@
 
 /**
 @brief Creates a StateManager object.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class StateManager
 {

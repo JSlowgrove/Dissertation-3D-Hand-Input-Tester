@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "GameObject.h"
 
 GameObject::GameObject(std::string name) : name(name)

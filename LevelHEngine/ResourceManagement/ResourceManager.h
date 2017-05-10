@@ -5,10 +5,10 @@
 #include "Music.h"
 #include "Shader.h"
 #include "Mesh.h"
-#include "Primitives.h"
 
 /**
 @brief Contains static variables and functions for use with resource manager.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class ResourceManager
 {
@@ -62,17 +62,6 @@ public:
 	@param id The ID of the file.
 	*/
 	static void deleteAudio(std::string id) { audio.erase(id); }
-
-	/**
-	@brief A static function to initialise a heightmap.
-	@param heightmapFileName The name of the heightmap file.
-	@returns The ID of the loaded file.
-	*/
-	static std::string initialiseHeightmap(std::string heightmapFileName);
-
-	static std::string initialiseHeightmap(std::string heightmapFileName, std::string textureFileName);
-
-	static std::string initialisePrimitive(Primitives::PrimativeType primType);
 
 	/**
 	@brief A static function to initialise a mesh without a texture.

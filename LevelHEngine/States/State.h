@@ -9,6 +9,7 @@ class StateManager;
 
 /**
 @brief Creates a State object to be inherited.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class State
 {

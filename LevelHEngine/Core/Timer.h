@@ -2,6 +2,7 @@
 
 /**
 @brief Handles timer functions.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class Timer
 {

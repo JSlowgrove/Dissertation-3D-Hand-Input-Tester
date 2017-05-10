@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "Timer.h"
 
 Timer::Timer(float inTimerLength) : timerLength(inTimerLength)

@@ -42,6 +42,8 @@ public:
 private:
 	///Other bools
 	bool initialLoop;
+	///The thread for the input
 	InThread* inThread;
+	///A pointer to the angle
 	float* angle;
 };

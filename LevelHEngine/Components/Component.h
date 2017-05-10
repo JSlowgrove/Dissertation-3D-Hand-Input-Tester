@@ -9,6 +9,7 @@ class Application;
 
 /**
 @brief A class that handles the components.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class Component
 {

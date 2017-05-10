@@ -5,6 +5,7 @@
 
 /**
 @brief Contains the Mat4 structure with functions and overloaded operators. This is row major.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 struct Mat4
 {

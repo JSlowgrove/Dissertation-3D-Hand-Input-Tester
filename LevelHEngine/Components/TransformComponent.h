@@ -6,6 +6,7 @@
 
 /**
 @brief A class that handles the transform component.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class TransformComponent : public Component
 {

@@ -5,6 +5,7 @@
 
 /**
 @brief Creates a Camera component.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class CameraComponent : public Component
 {

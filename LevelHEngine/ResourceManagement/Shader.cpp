@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "Shader.h"
 
 #include "FileLoader.h"

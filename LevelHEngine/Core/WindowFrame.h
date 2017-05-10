@@ -5,6 +5,7 @@
 
 /**
 @brief Contains details and functions for use with the window.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class WindowFrame
 {

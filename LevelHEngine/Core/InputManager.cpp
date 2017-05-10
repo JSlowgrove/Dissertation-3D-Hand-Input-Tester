@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "InputManager.h"
 
 Vec2 InputManager::mousePos = Vec2(0.0f, 0.0f);

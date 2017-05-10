@@ -5,6 +5,7 @@
 
 /**
 @brief Handles music using SDL_Mixer.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class Music
 {

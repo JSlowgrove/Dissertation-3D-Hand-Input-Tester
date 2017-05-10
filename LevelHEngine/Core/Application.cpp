@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "Application.h"
 
 #include <SDL_ttf.h>
@@ -6,7 +8,7 @@
 #include <GL/glew.h>
 #include "Logging.h"
 #include "WindowFrame.h"
-#include "../States/Splash.h"
+#include "../States/DemoState.h"
 
 SDL_Window* Application::window;
 SDL_GLContext Application::glcontext;
@@ -64,7 +66,7 @@ void Application::init(std::string title, Vec2 windowPos, Vec2 windowRes, bool f
 	//setup state manager
 	stateManager = new StateManager();
 	//set the initial state
-	stateManager->addState(new Splash(stateManager, window));
+	stateManager->addState(new DemoState(stateManager, window));
 
 }
 	

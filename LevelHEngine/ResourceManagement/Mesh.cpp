@@ -1,47 +1,11 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "Mesh.h"
 
 #include <SDL.h>
 #include <SDL_image.h>
 #include "FileLoader.h"
-#include "Heightmap.h"
-#include "Primitives.h"
 #include "../Core/Logging.h"
-
-Mesh::Mesh(Primitives::PrimativeType primType) : heightmap(false), primative(true)
-{
-	//initialise the texture
-	textureFileName = "Untextured";
-
-	//Creates one VAO
-	glGenVertexArrays(1, &vertexArrayObject);
-	//initialise the code to bind to the VBO
-	glBindVertexArray(vertexArrayObject);
-
-	//load the obj file
-	std::vector<float> vertices;
-
-	switch (primType)
-	{
-	case Primitives::TOURUS:
-		vertices = Primitives::generateTourus();
-		break;
-	}
-
-	//set the number of vertices's
-	numberOfVertices = vertices.size() / 3;
-
-	GLuint positionBuffer = initaliseVBO(3, vertices, 0);
-
-	//deactivate the VBO
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
-	glBindVertexArray(0);
-
-	//delete the VBO's
-	glDeleteBuffers(1, &positionBuffer);
-
-	//disable the array
-	glDisableVertexAttribArray(0);
-}
 
 Mesh::Mesh(std::string objFileName) : heightmap(false), primative(false)
 {
@@ -114,10 +78,6 @@ void Mesh::initialiseVAO(std::string fileName)
 	if (!heightmap)
 	{
 		FileLoader::loadOBJFile(fileName, vertices, vertexNormals, vertexTextures);
-	}
-	else
-	{
-		Heightmap::initaliseHeightmap(fileName, vertices, vertexNormals, vertexTextures, indices);
 	}
 
 	//set the number of vertices's

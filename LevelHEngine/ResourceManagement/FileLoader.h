@@ -11,6 +11,7 @@
 
 /**
 @brief A namespace that contains functions to load in files.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 namespace FileLoader
 {

@@ -124,10 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Components\BoundingBoxComponent.cpp" />
-    <ClCompile Include="Components\BoundingSphereComponent.cpp" />
     <ClCompile Include="Components\CameraComponent.cpp" />
-    <ClCompile Include="Components\CameraControlComponent.cpp" />
     <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="Components\ModelComponent.cpp" />
     <ClCompile Include="Components\TransformComponent.cpp" />
@@ -144,23 +141,16 @@
     <ClCompile Include="Maths\Mat4.cpp" />
     <ClCompile Include="ResourceManagement\Audio.cpp" />
     <ClCompile Include="ResourceManagement\FileLoader.cpp" />
-    <ClCompile Include="ResourceManagement\Heightmap.cpp" />
     <ClCompile Include="ResourceManagement\Music.cpp" />
     <ClCompile Include="ResourceManagement\Mesh.cpp" />
-    <ClCompile Include="ResourceManagement\Primitives.cpp" />
     <ClCompile Include="ResourceManagement\ResourceManager.cpp" />
     <ClCompile Include="ResourceManagement\Shader.cpp" />
     <ClCompile Include="States\DemoState.cpp" />
-    <ClCompile Include="States\MainMenu.cpp" />
-    <ClCompile Include="States\Splash.cpp" />
     <ClCompile Include="States\State.cpp" />
     <ClCompile Include="States\StateManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Components\BoundingBoxComponent.h" />
-    <ClInclude Include="Components\BoundingSphereComponent.h" />
     <ClInclude Include="Components\CameraComponent.h" />
-    <ClInclude Include="Components\CameraControlComponent.h" />
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\ModelComponent.h" />
     <ClInclude Include="Components\TransformComponent.h" />
@@ -181,15 +171,11 @@
     <ClInclude Include="Maths\Vec4.h" />
     <ClInclude Include="ResourceManagement\Audio.h" />
     <ClInclude Include="ResourceManagement\FileLoader.h" />
-    <ClInclude Include="ResourceManagement\Heightmap.h" />
     <ClInclude Include="ResourceManagement\Music.h" />
     <ClInclude Include="ResourceManagement\Mesh.h" />
-    <ClInclude Include="ResourceManagement\Primitives.h" />
     <ClInclude Include="ResourceManagement\ResourceManager.h" />
     <ClInclude Include="ResourceManagement\Shader.h" />
     <ClInclude Include="States\DemoState.h" />
-    <ClInclude Include="States\MainMenu.h" />
-    <ClInclude Include="States\Splash.h" />
     <ClInclude Include="States\State.h" />
     <ClInclude Include="States\StateManager.h" />
   </ItemGroup>

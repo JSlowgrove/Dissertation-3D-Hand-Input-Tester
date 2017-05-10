@@ -4,6 +4,7 @@
 
 /**
 @brief Contains the Vec4 structure with functions and overloaded operators.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 struct Vec4
 {

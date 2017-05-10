@@ -5,6 +5,7 @@
 
 /**
 @brief Creates a Shader from an text file, this can then be used with OpenGL.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class Shader
 {

@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "State.h"
 
 State::State(StateManager * stateManager, SDL_Window* window, std::string name)

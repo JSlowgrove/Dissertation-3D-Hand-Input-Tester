@@ -13,6 +13,7 @@ class GameObject;
 
 /**
 @brief Contains details and functions for the application.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class Application
 {

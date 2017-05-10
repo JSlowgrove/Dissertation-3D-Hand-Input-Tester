@@ -1,14 +1,12 @@
 #include "DemoState.h"
 
 #include <SDL.h>
-#include "MainMenu.h"
 #include "../Core/GameObject.h"
 #include "../Core/InputManager.h"
 #include "../Core/Application.h"
 #include "../Core/Logging.h"
 #include "../Components/ModelComponent.h"
 #include "../Components/CameraComponent.h"
-#include "../Components/CameraControlComponent.h"
 #include "../Components/TransformComponent.h"
 #include "../ResourceManagement/ResourceManager.h"
 #include "../ResourceManagement/ResourceManager.h"
@@ -29,7 +27,6 @@ DemoState::DemoState(StateManager* stateManager, SDL_Window* window)
 	auto camera = GameObject::create("camera").lock();
 	camera->addComponent<CameraComponent>();
 	camera->addComponent<TransformComponent>();
-	camera->addComponent<CameraControlComponent>();
 	Application::camera = camera;
 
 	auto rec1 = GameObject::create("rec1").lock();
@@ -63,8 +60,10 @@ DemoState::DemoState(StateManager* stateManager, SDL_Window* window)
 	//initalise bools
 	initialLoop = true;
 
+	//initalise the angle
 	angle = new float(0.0f);
 
+	//initalise the input thread
 	inThread = new InThread(1, angle);
 }
 
@@ -97,15 +96,9 @@ bool DemoState::input()
 		}
 		if (InputManager::isKeyPressed(ESC_KEY))
 		{
-			//If Escape is pressed, return to main menu
-			//stateManager->changeState(new MainMenu(stateManager, window));
-			//return true;
-
 			//If Escape is pressed, end the game loop
 			return false;
 		}
-		//Handle the camera input
-		Application::camera->getComponent<CameraControlComponent>().lock()->handleInput();
 	}
 	return true;
 }
@@ -122,6 +115,7 @@ void DemoState::update()
 	//loops through the game objects
 	for (unsigned int i = 0; i < Application::getGameObjects().size(); i++)
 	{
+		//set the rotation of the rectangle to the current value of the pointer
 		if (Application::getGameObjects()[i]->getName() == "rec1")
 		{
 			Application::getGameObjects()[i]->getComponent<TransformComponent>().lock()->setRotation(
@@ -129,9 +123,6 @@ void DemoState::update()
 			);
 		}
 	}
-
-	//Update the camera
-	Application::camera->getComponent<CameraControlComponent>().lock()->updateCamera(Application::getDT());
 }
 
 void DemoState::draw()

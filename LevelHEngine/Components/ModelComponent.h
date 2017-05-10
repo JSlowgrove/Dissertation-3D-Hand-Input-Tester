@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../ResourceManagement/Primitives.h"
 #include "Component.h"
 
 /**
 @brief A class that handles the model component.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class ModelComponent : public Component
 {
@@ -18,12 +18,6 @@ public:
 	@brief A function for the model render.
 	*/
 	void onRender();
-
-	void initaliseHeightmap(std::string fileName);
-
-	void initalisePrimitive(Primitives::PrimativeType primType);
-
-	void initaliseHeightmap(std::string fileName, std::string textureFileName);
 
 	/**
 	@brief A function to initalise a mesh without a texture.

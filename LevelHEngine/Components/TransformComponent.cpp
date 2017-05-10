@@ -1,3 +1,5 @@
+//DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
+
 #include "TransformComponent.h"
 
 //uses glm for mat4's as my mat4's are not 100% complete

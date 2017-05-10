@@ -7,6 +7,7 @@
 
 /**
 @brief Contains static variables and functions for use with input manager.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 class InputManager
 {

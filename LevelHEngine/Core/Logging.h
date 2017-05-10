@@ -5,6 +5,7 @@
 
 /**
 @brief A namespace that contains logging functions for use within the code.
+DISCLAIMER - THIS WAS NOT BUILT FOR THE DISSERTATION
 */
 namespace Logging
 {
