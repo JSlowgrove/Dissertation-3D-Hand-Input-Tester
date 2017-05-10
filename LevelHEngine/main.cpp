@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	Logging::logI("Program Started: " + Logging::getCurrentDateAndTime());
 
 	///Initialise the application instance 
-	Application::init("Level H Engine", Vec2(60, 60), Vec2(640, 480), false, 60.0f);
+	Application::init("C++ 3D Based Data Simulation", Vec2(60, 60), Vec2(640, 480), false, 60.0f);
 
 	///Run the application
 	Application::run(argc, argv);
